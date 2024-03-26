@@ -3,6 +3,14 @@ package Modul_5;
 import java.util.Scanner;
 import Modul_2.Pegawai;
 
+/*
+Sudah lumayan bagus akan tapi akan lebih bagus lagi jika
+membuat statement if-else agar tidak ada data yang kosong dan
+integer yang melebihi atau kurang dari menu dan persyaratan menu.
+
+Km gak pakai class Perusahaan.java
+pakaiii
+ */
 public class KelolaPerusahaan {
 
     public static void main(String[] args) {
@@ -32,6 +40,14 @@ public class KelolaPerusahaan {
             kerja[i] = new Pegawai(npp, nama, golongan, status, jumlahAnak);
 
         }
+
+        Perusahaan kantor = new Perusahaan("Gramedia", "Jakarta", "Pemerintah", "128213518");
+
+        kantor.getalamat();
+        kantor.getnamaPerusahaan();
+        kantor.getdaftarPegawai();
+        kantor.getpemilik();
+        kantor.getNPWP();
 
         for (int i = 0; i < kerja.length; i++) {
             System.out.println("");

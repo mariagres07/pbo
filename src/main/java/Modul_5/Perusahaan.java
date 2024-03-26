@@ -4,14 +4,17 @@ import Modul_2.Pegawai;
 
 public class Perusahaan {
 
-    String namaPerusahaan, alamat, pemilik, NPWP, daftarPegawai;
+    String namaPerusahaan;
+    String alamat;
+    String pemilik;
+    String npwp;
     Pegawai[] Pegawai;
 
-    public Perusahaan(String namaPerusahaan, String alamat, String pemilik, String NPWP) {
+    public Perusahaan(String namaPerusahaan, String alamat, String pemilik, String npwp) {
         this.namaPerusahaan = namaPerusahaan;
         this.alamat = alamat;
         this.pemilik = pemilik;
-        this.NPWP = NPWP;
+        this.npwp = npwp;
 
     }
 
@@ -39,12 +42,12 @@ public class Perusahaan {
         return pemilik;
     }
 
-    public void setNPWP(String NPWP) {
-        this.NPWP = NPWP;
+    public void npwp(String npwp) {
+        this.npwp = npwp;
     }
 
-    public String getNPWP() {
-        return NPWP;
+    public String npwp() {
+        return npwp;
     }
 
     public void setdaftarPegawai(Pegawai[] Pegawai) {

@@ -5,9 +5,9 @@ public class Buku {
     String kodeBuku;
     String judul;
     int tahunTerbit;
-    Pengarang daftarPengarang;
+    String daftarPengarang;
 
-    public Buku(String kodeBuku, String judul, int tahunTerbit, Pengarang daftarPengarang) {
+    public Buku(String kodeBuku, String judul, int tahunTerbit, String daftarPengarang) {
         this.kodeBuku = kodeBuku;
         this.judul = judul;
         this.tahunTerbit = tahunTerbit;
@@ -30,6 +30,7 @@ public class Buku {
         this.judul = judul;
     }
 
+    // getTahunTerbit 9 usages sementara method setnya dan konstruktor no usages
     public int getTahunTerbit() {
         return tahunTerbit;
     }
@@ -38,11 +39,11 @@ public class Buku {
         this.tahunTerbit = tahunTerbit;
     }
 
-    public Pengarang getDaftarPengarang() {
+    public String getDaftarPengarang() {
         return daftarPengarang;
     }
 
-    public void setDaftarPengarang(Pengarang daftarPengarang) {
+    public void setDaftarPengarang(String daftarPengarang) {
         this.daftarPengarang = daftarPengarang;
     }
 

@@ -2,7 +2,6 @@ Modul_1\LingkaranMain.class
 Modul_3\Titik.class
 Modul_4\KelolaBuku.class
 latihanpbo\Mobil.class
-Modul_5\buku.class
 Modul_3\ProgramStudi.class
 latihanpbo\MainMobil.class
 Modul_2\GajiMain.class
@@ -11,6 +10,7 @@ Modul_5\KelolaPerusahaan.class
 Modul_1\PersegiMain.class
 Modul_4\MahasiswaMain.class
 latihanpbo\dosen.class
+Modul_5\Buku.class
 Modul_3\SegitigaMain.class
 Modul_1\Mobil.class
 Modul_3\ProgramStudiMain.class

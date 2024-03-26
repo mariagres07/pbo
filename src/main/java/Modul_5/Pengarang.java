@@ -2,22 +2,22 @@ package Modul_5;
 
 public class Pengarang {
 
-    String NIK;
+    String nik;
     String nama;
     String alamat;
 
-    public Pengarang(String NIK, String nama, String alamat) {
-        this.NIK = NIK;
+    public Pengarang(String nik, String nama, String alamat) {
+        this.nik = nik;
         this.nama = nama;
         this.alamat = alamat;
     }
 
-    public String getNIK() {
-        return NIK;
+    public String getnik() {
+        return nik;
     }
 
-    public void setNIK(String NIK) {
-        this.NIK = NIK;
+    public void setnik(String nik) {
+        this.nik = nik;
     }
 
     public String getNama() {

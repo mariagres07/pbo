@@ -8,35 +8,39 @@ public class KelolaBuku {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Masukkan jumlah buku baru = ");
+        System.out.print("Masukkan jumlah buku baru = ");
         int banyakBuku = in.nextInt();
 
         Buku[] bukuBaru = new Buku[banyakBuku];
 
         for (int i = 0; i < bukuBaru.length; i++) {
-            System.out.println("");
-            System.out.println("Masukkan kode buku = ");
+            System.out.println("\nBuku ke- " + (i + 1));
+            System.out.print("Masukkan kode buku      = ");
             String kodeBuku = in.next();
-            System.out.println("Masukkan judul buku = ");
-            System.out.print("Masukkan judul            = ");
+            System.out.print("Masukkan judul          = ");
             String judul = in.next();
-            System.out.print("Masukkan nama pengarang   = ");
-            String namaPengarang = in.next();
-            System.out.print("Masukkan tahun terbit     = ");
-            String tahunTerbit = in.next();
+            System.out.print("Masukkan tahun terbit   = ");
+            int tahunTerbit = in.nextInt();
+            System.out.print("Masukkan nama Pengarang = ");
+            String daftarpengarang = in.next();
+
+            bukuBaru[i] = new Buku(kodeBuku, judul, tahunTerbit, daftarpengarang);
         }
 
-        System.out.println("Masukkan jumlah pengarang = ");
+        System.out.print("\nMasukkan jumlah pengarang = ");
         int banyakPengarang = in.nextInt();
 
         for (int i = 0; i < banyakPengarang; i++) {
-            System.out.println("");
-            System.out.println("Masukkan NIK  = ");
-            int nik = in.nextInt();
-            System.out.println("Masukkan nama = ");
+
+            Pengarang[] penulis = new Pengarang[banyakBuku];
+            System.out.print("\nMasukkan NIK         = ");
+            String NIK = in.next();
+            System.out.print("Masukkan nama        = ");
             String nama = in.next();
-            System.out.println("Masukkan alamat = ");
+            System.out.print("Masukkan alamat      = ");
             String alamat = in.next();
+
+            penulis[i] = new Pengarang(NIK, nama, alamat);
         }
 
         int max = 0;
@@ -48,8 +52,8 @@ public class KelolaBuku {
             }
 
         }
-        System.out.println("");
-        System.out.println("Gaji pokok terbesar = " + bukuBaru[max].getTahunTerbit());
+
+        System.out.println("\nBuku terbitan paling akhir = " + bukuBaru[max].getTahunTerbit());
 
         int min = 0;
         double mini = bukuBaru[0].getTahunTerbit();
@@ -58,20 +62,23 @@ public class KelolaBuku {
                 mini = bukuBaru[i].getTahunTerbit();
                 min = i;
             }
-            System.out.println("Jumlah buku berdasarkan tahun");
-            System.out.print("Masukkan tahun yang dicari = ");
-            int tahun = in.nextInt();
-
-            int banyakTahun = 0;
-
-            for (int a = 0; a < banyakBuku; a++) {
-                if (bukuBaru[a].getTahunTerbit() == tahun) {
-                    banyakTahun++;
-                }
-            }
-            System.out.println("");
-            System.out.println("Gaji pokok terkecil = " + bukuBaru[min].getTahunTerbit());
 
         }
+
+        System.out.println("\nBuku terbitan paling awal = " + bukuBaru[min].getTahunTerbit());
+
+        System.out.println("\nJumlah buku berdasarkan tahun");
+        System.out.print("Masukkan tahun yang dicari = ");
+        int tahun = in.nextInt();
+
+        int banyakTahun = 0;
+
+        for (int j = 0; j < banyakBuku; j++) {
+            if (bukuBaru[j].getTahunTerbit() == tahun) {
+                banyakTahun++;
+            }
+        }
+
+        System.out.println("\njumlah buku = " + banyakTahun);
     }
 }
