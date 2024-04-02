@@ -7,7 +7,7 @@ public class Gaji {
     int golongan;
     boolean menikah;
     int jumlahAnak;
-
+    int Gaji;
    
     public Gaji(String NPP, String nama, int golongan, boolean menikah, int jumlahAnak) {
         this.NPP = NPP;
@@ -15,6 +15,10 @@ public class Gaji {
         this.golongan = golongan;
         this.menikah = menikah;
         this.jumlahAnak = jumlahAnak;
+    }
+
+    public Gaji(String namaPegawai, double gajiPokok) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     

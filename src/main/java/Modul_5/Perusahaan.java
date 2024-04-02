@@ -2,20 +2,22 @@ package Modul_5;
 
 import Modul_2.Pegawai;
 
+import java.util.Scanner;
+
 public class Perusahaan {
 
+    Scanner in = new Scanner(System.in);
     String namaPerusahaan;
     String alamat;
     String pemilik;
     String npwp;
-    Pegawai[] Pegawai;
+    Pegawai[] pegawai;
 
     public Perusahaan(String namaPerusahaan, String alamat, String pemilik, String npwp) {
         this.namaPerusahaan = namaPerusahaan;
         this.alamat = alamat;
         this.pemilik = pemilik;
         this.npwp = npwp;
-
     }
 
     public void setnamaPerusahaan(String namaPerusahaan) {
@@ -42,19 +44,24 @@ public class Perusahaan {
         return pemilik;
     }
 
-    public void npwp(String npwp) {
+    public void setnpwp(String npwp) {
         this.npwp = npwp;
     }
 
-    public String npwp() {
+    public String getnpwp() {
         return npwp;
     }
 
-    public void setdaftarPegawai(Pegawai[] Pegawai) {
-        this.Pegawai = Pegawai;
+    public void setDaftarPegawai(Pegawai[] pegawai) {
+        this.pegawai = pegawai;
     }
 
-    public Pegawai[] getdaftarPegawai() {
-        return Pegawai;
+    public Pegawai[] getDaftarPegawai() {
+        return this.pegawai;
+    }
+
+    public void tambahPegawai() {
+        int status;
+        int golongan;
     }
 }

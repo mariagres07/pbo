@@ -8,7 +8,7 @@ public class KelolaBuku {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.print("Masukkan jumlah buku baru = ");
+        System.out.print("Masukkan jumlah buku baru  = ");
         int banyakBuku = in.nextInt();
 
         Buku[] bukuBaru = new Buku[banyakBuku];
@@ -22,7 +22,7 @@ public class KelolaBuku {
             System.out.print("Masukkan tahun terbit   = ");
             int tahunTerbit = in.nextInt();
             System.out.print("Masukkan nama Pengarang = ");
-            String daftarpengarang = in.next();
+            int daftarpengarang = in.nextInt();
 
             bukuBaru[i] = new Buku(kodeBuku, judul, tahunTerbit, daftarpengarang);
         }
@@ -31,13 +31,12 @@ public class KelolaBuku {
         int banyakPengarang = in.nextInt();
 
         for (int i = 0; i < banyakPengarang; i++) {
-
             Pengarang[] penulis = new Pengarang[banyakBuku];
             System.out.print("\nMasukkan NIK         = ");
             String NIK = in.next();
-            System.out.print("Masukkan nama        = ");
+            System.out.print("Masukkan nama          = ");
             String nama = in.next();
-            System.out.print("Masukkan alamat      = ");
+            System.out.print("Masukkan alamat        = ");
             String alamat = in.next();
 
             penulis[i] = new Pengarang(NIK, nama, alamat);
@@ -50,9 +49,7 @@ public class KelolaBuku {
                 maxi = bukuBaru[i].getTahunTerbit();
                 max = i;
             }
-
         }
-
         System.out.println("\nBuku terbitan paling akhir = " + bukuBaru[max].getTahunTerbit());
 
         int min = 0;
@@ -62,9 +59,7 @@ public class KelolaBuku {
                 mini = bukuBaru[i].getTahunTerbit();
                 min = i;
             }
-
         }
-
         System.out.println("\nBuku terbitan paling awal = " + bukuBaru[min].getTahunTerbit());
 
         System.out.println("\nJumlah buku berdasarkan tahun");
@@ -72,13 +67,11 @@ public class KelolaBuku {
         int tahun = in.nextInt();
 
         int banyakTahun = 0;
-
         for (int j = 0; j < banyakBuku; j++) {
             if (bukuBaru[j].getTahunTerbit() == tahun) {
                 banyakTahun++;
             }
         }
-
         System.out.println("\njumlah buku = " + banyakTahun);
     }
 }

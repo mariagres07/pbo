@@ -4,7 +4,8 @@ public class Pegawai {//deklarasi class Pegawai
 
     String npp;
     String nama;
-    int golongan, status;
+    int golongan;
+    int status;
     int jumlahAnak;
 
     public Pegawai(String npp, String nama, int golongan, int status, int jumlahAnak) {//constructor

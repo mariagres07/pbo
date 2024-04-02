@@ -1,13 +1,15 @@
 package Modul_5;
 
+import java.util.Scanner;
+
 public class Buku {
 
     String kodeBuku;
     String judul;
     int tahunTerbit;
-    String daftarPengarang;
+    int daftarPengarang;
 
-    public Buku(String kodeBuku, String judul, int tahunTerbit, String daftarPengarang) {
+    public Buku(String kodeBuku, String judul, int tahunTerbit, int daftarPengarang) {
         this.kodeBuku = kodeBuku;
         this.judul = judul;
         this.tahunTerbit = tahunTerbit;
@@ -30,7 +32,6 @@ public class Buku {
         this.judul = judul;
     }
 
-    // getTahunTerbit 9 usages sementara method setnya dan konstruktor no usages
     public int getTahunTerbit() {
         return tahunTerbit;
     }
@@ -39,11 +40,11 @@ public class Buku {
         this.tahunTerbit = tahunTerbit;
     }
 
-    public String getDaftarPengarang() {
+    public int getDaftarPengarang() {
         return daftarPengarang;
     }
 
-    public void setDaftarPengarang(String daftarPengarang) {
+    public void setDaftarPengarang(int daftarPengarang) {
         this.daftarPengarang = daftarPengarang;
     }
 
