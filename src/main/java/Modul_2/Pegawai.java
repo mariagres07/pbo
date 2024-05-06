@@ -16,43 +16,43 @@ public class Pegawai {//deklarasi class Pegawai
         this.jumlahAnak = jumlahAnak;
     }
 
-    public void setnpp(String npp) {
+    public void setNpp(String npp) {
         this.npp = npp;
     }
 
-    public String getnpp() {
+    public String getNpp() {
         return npp;
     }
 
-    public void setnama(String nama) {
+    public void setNama(String nama) {
         this.nama = nama;
     }
 
-    public String getnama() {
+    public String getNama() {
         return nama;
     }
 
-    public void setgolongan(int golongan) {
+    public void setGolongan(int golongan) {
         this.golongan = golongan;
     }
 
-    public int getgolongan() {
+    public int getGolongan() {
         return golongan;
     }
 
-    public void setstatus(int status) {
+    public void setStatus(int status) {
         this.status = status;
     }
 
-    public int getstatus() {
+    public int getStatus() {
         return status;
     }
 
-    public void setjumlahAnak(int jumlahAnak) {
+    public void setJumlahAnak(int jumlahAnak) {
         this.jumlahAnak = jumlahAnak;
     }
 
-    public int getjumlahAnak() {
+    public int getJumlahAnak() {
         return jumlahAnak;
     }
 
@@ -90,15 +90,15 @@ public class Pegawai {//deklarasi class Pegawai
         
         Pegawai orang1 = new Pegawai("23785", "jaemin", 2, 1, 1);
         
-        System.out.println("NPP         = " + orang.getnpp());
-        System.out.println("Nama        = " + orang.getnama());
+        System.out.println("NPP         = " + orang.getNpp());
+        System.out.println("Nama        = " + orang.getNama());
         System.out.println("Gaji pokok  = " + orang.hitungGajiPokok());
         System.out.println("Tunjangan   = " + orang.hitungTunjanganKeluarga());
         System.out.println("Gaji total  = " + orang.hitungGajiTotal());
 
         System.out.println("");
-        System.out.println("NPP         = " + orang1.getnpp());
-        System.out.println("Nama        = " + orang1.getnama());
+        System.out.println("NPP         = " + orang1.getNpp());
+        System.out.println("Nama        = " + orang1.getNama());
         System.out.println("Gaji pokok  = " + orang1.hitungGajiPokok());
         System.out.println("Tunjangan   = " + orang1.hitungTunjanganKeluarga());
         System.out.println("Gaji total  = " + orang1.hitungGajiTotal());

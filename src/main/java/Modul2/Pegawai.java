@@ -7,13 +7,15 @@ public class Pegawai {
     private int golongan;
     private boolean menikah;
     private int jumlahAnak;
-
+    private int gajiPokok;
+    
     public Pegawai(String NPP, String nama, int golongan, boolean menikah, int jumlahAnak) {
         this.NPP = NPP;
         this.nama = nama;
         this.golongan = golongan;
         this.menikah = menikah;
         this.jumlahAnak = jumlahAnak;
+        this.gajiPokok = gajiPokok;
     }
 
     public String getNPP() {
@@ -22,6 +24,10 @@ public class Pegawai {
 
     public void setNPP(String NPP) {
         this.NPP = NPP;
+    }
+
+    public int getGajiPokok() {
+        return gajiPokok;
     }
 
     public String getNama() {

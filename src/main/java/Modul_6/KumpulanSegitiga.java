@@ -27,6 +27,7 @@ public class KumpulanSegitiga {
         double s = hitungKeliling();
         return Math.sqrt(s * (s - hitungSisi(x1, y1, x2, y2) + hitungSisi(x2, y2, x3, y3)
                 + hitungSisi(x3, y3, x1, y1)));
+        
     }
 
     public static void rataRata(KumpulanSegitiga[] daftarSegitiga) {

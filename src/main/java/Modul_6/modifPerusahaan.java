@@ -7,17 +7,17 @@ import java.util.Scanner;
 public class modifPerusahaan {
 
     int jumlahPegawai;
-    Pegawai[] kerja;
 
     public modifPerusahaan(int jumlahPegawai) {
         this.jumlahPegawai = jumlahPegawai;
     }
 
-    public  void pegawaiData(Pegawai[] pgw) {
+    public void pegawaiData(Pegawai[] pgw) {
         Scanner in = new Scanner(System.in);
         int golongan = 0;
         for (int i = 0; i < pgw.length; i++) {
             System.out.println();
+            System.out.println("Pegawai ke-" + (i + 1));
             System.out.print("Masukkan npp                        = ");
             String npp = in.next();
             System.out.print("Masukkan nama                       = ");
@@ -46,7 +46,7 @@ public class modifPerusahaan {
         for (int i = 0; i < kerja.length; i++) {
             System.out.println();
             System.out.println("Data pegawai ke-" + (i + 1) + " ");
-            System.out.println("Nama            = " + kerja[i].getnama());
+            System.out.println("Nama            = " + kerja[i].getNama());
             System.out.println("Gaji pokok      = " + kerja[i].hitungGajiPokok());
         }
     }
@@ -61,7 +61,7 @@ public class modifPerusahaan {
             }
         }
         System.out.println();
-        System.out.println("Gaji pokok terbesar = " + kerja[max].getnama());
+        System.out.println("Gaji pokok terbesar = " + kerja[max].getNama());
     }
 
     public void rataRataGaji(Pegawai[] kerja) {

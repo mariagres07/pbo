@@ -5,7 +5,6 @@ import Modul_5.Pengarang;
 import java.util.Scanner;
 
 public class modifBuku {
-//    Buku[] bukuBaru;
     int banyakBuku;
 
     public modifBuku(int banyakBuku) {
@@ -16,12 +15,12 @@ public class modifBuku {
         Scanner in = new Scanner(System.in);
         for (int i = 0; i < bukuBaru.length; i++) {
             System.out.println("\nBuku ke- " + (i + 1));
-            System.out.print("Masukkan kode buku      = ");
+            System.out.print("Masukkan kode buku        = ");
             String kodeBuku = in.next();
-            System.out.print("Masukkan judul          = ");
+            System.out.print("Masukkan judul            = ");
             String judul = in.next();
             in.nextLine();
-            System.out.print("Masukkan tahun terbit   = ");
+            System.out.print("Masukkan tahun terbit     = ");
             int tahunTerbit = in.nextInt();
             System.out.print("Masukkan banyak pengarang = ");
             int banyakPengarang = in.nextInt();
@@ -69,7 +68,6 @@ public class modifBuku {
     }
 
     public void bukuTerbitanPalingLama(Buku[] bukuBaru) {
-//        Buku[] bukuBaru = new Buku[banyakBuku];
         Scanner in = new Scanner(System.in);
         int min = 0;
         double mini = bukuBaru[0].getTahunTerbit();

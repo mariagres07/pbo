@@ -10,8 +10,8 @@ public class ProgramStudiMain {//deklarasi class ProgramStudiMain
         Pegawai orang = new Pegawai("23785", "Jisung", 1, 0, 0);
         
         System.out.println("Nama program studi  = " + pertama.nama_prodi);
-        System.out.println("Ketua program studi = " + orang.getnama());
-        System.out.println("NPP                 = " + orang.getnpp());
+        System.out.println("Ketua program studi = " + orang.getNama());
+        System.out.println("NPP                 = " + orang.getNpp());
 
     }
 }

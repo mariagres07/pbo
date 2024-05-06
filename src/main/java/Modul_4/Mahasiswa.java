@@ -67,7 +67,7 @@ public class Mahasiswa {
         return nilaiFinal;
     }
 
-    public String konversiNilai() {
+    String konversiNilai() {
         double nilaiAkhir = hitungFinal();
         String nilaiHuruf = null;
         if (nilaiAkhir >= 80 && nilaiAkhir <= 100) {

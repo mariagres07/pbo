@@ -4,21 +4,21 @@ import Modul_5.Perusahaan;
 import Modul_2.Pegawai;
 import java.util.Scanner;
 
-public class mainperusahaan {
+public class mainPerusahaan {
 
     public static void main(String[] args) {
         
         Scanner in = new Scanner(System.in);
         
-        System.out.print("Nama Perusahaan: ");
+        System.out.print("Nama Perusahaan    = ");
         String namaPerusahaan = in.nextLine();
-        System.out.print("Alamat Perusahaan: ");
+        System.out.print("Alamat Perusahaan  = ");
         String alamatPerusahaan = in.nextLine();
-        System.out.print("Pemilik: ");
+        System.out.print("Pemilik            = ");
         String pemilik = in.nextLine();
-        System.out.print("NPWP: ");
+        System.out.print("NPWP               = ");
         String npwp = in.nextLine();
-        System.out.print("Jumlah Pegawai: ");
+        System.out.print("Jumlah Pegawai     = ");
         int jumlahPegawai = in.nextInt();
         
         Perusahaan kantor = new Perusahaan(namaPerusahaan, alamatPerusahaan, pemilik, npwp);

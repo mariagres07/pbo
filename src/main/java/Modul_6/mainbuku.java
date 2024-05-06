@@ -3,7 +3,7 @@ package Modul_6;
 import java.util.Scanner;
 import Modul_5.Buku;
 
-public class mainbuku {
+public class mainBuku {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

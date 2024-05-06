@@ -8,15 +8,16 @@ public class Perusahaan {
      private String pemilik;
      private String NPWP;
      private Pegawai[] daftarPegawai;
-
+     
     Perusahaan(String namaPerusahaan, String alamat, String pemilik, String NPWP, Pegawai[] daftarPegawai) {
         this.namaPerusahaan = namaPerusahaan;
         this.alamat = alamat;
         this.pemilik = pemilik;
         this.NPWP = NPWP;
         this.daftarPegawai = daftarPegawai;
+        
     }
-
+    
     public String getNamaPerusahaan() {
         return namaPerusahaan;
     }

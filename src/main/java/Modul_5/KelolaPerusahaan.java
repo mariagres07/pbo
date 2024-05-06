@@ -54,7 +54,7 @@ public class KelolaPerusahaan {
         for (int i = 0; i < kerja.length; i++) {
             System.out.println();
             System.out.println("Data pegawai ke-" + (i + 1) + " ");
-            System.out.println("Nama            = " + kerja[i].getnama());
+            System.out.println("Nama            = " + kerja[i].getNama());
             System.out.println("Gaji pokok      = " + kerja[i].hitungGajiPokok());
         }
 
@@ -68,7 +68,7 @@ public class KelolaPerusahaan {
 
         }
         System.out.println();
-        System.out.println("Gaji pokok terbesar = " + kerja[max].getnama());
+        System.out.println("Gaji pokok terbesar = " + kerja[max].getNama());
 
         int min = 0;
         double mini = kerja[0].hitungGajiPokok();
@@ -80,7 +80,7 @@ public class KelolaPerusahaan {
 
         }
         System.out.println();
-        System.out.println("Gaji pokok terkecil = " + kerja[min].getnama());
+        System.out.println("Gaji pokok terkecil = " + kerja[min].getNama());
 
         double gaji = 0;
         for (int i = 0; i < kerja.length; i++) {
