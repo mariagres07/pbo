@@ -1,9 +1,8 @@
 package Modul_6;
 
 public class KumpulanSegitiga {
-    int jumlahSegitiga;
-    int daftarSegitiga;
-    public double x1, y1, x2, y2, x3, y3;
+    int jumlahSegitiga, daftarSegitiga;
+    double x1, y1, x2, y2, x3, y3;
 
     public KumpulanSegitiga(double x1, double y1, double x2, double y2, double x3, double y3) {
         this.x1 = x1;
@@ -26,8 +25,7 @@ public class KumpulanSegitiga {
     public double hitungLuas() {//method yang berisi perhitungan luas daftarSegitigatiga
         double s = hitungKeliling();
         return Math.sqrt(s * (s - hitungSisi(x1, y1, x2, y2) + hitungSisi(x2, y2, x3, y3)
-                + hitungSisi(x3, y3, x1, y1)));
-        
+                + hitungSisi(x3, y3, x1, y1)));   
     }
 
     public static void rataRata(KumpulanSegitiga[] daftarSegitiga) {
@@ -54,15 +52,15 @@ public class KumpulanSegitiga {
     }
 
     public static void terkecil(KumpulanSegitiga[] daftarSegitiga) {
-        int max = 0;
-        double maxi = daftarSegitiga[0].hitungLuas();
+        int min = 0;
+        double mini = daftarSegitiga[0].hitungLuas();
         for (int i = 0; i < daftarSegitiga.length; i++) {
-            if (daftarSegitiga[i].hitungLuas() < maxi) {
-                maxi = daftarSegitiga[i].hitungLuas();
-                max = i;
+            if (daftarSegitiga[i].hitungLuas() < mini) {
+                mini = daftarSegitiga[i].hitungLuas();
+                min = i;
             }
         }
         System.out.println();
-        System.out.println("Paling kecil = " + daftarSegitiga[max].hitungLuas());
+        System.out.println("Paling kecil = " + daftarSegitiga[min].hitungLuas());
     }
 }

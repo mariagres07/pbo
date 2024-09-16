@@ -1,7 +1,6 @@
 package Modul_5;
 
 public class Buku {
-
     String kodeBuku;
     String judul;
     int tahunTerbit;

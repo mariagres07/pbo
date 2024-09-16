@@ -61,17 +61,16 @@ public class KelolaBuku {
             }
         }
         System.out.println("\nBuku terbitan paling awal = " + bukuBaru[min].getTahunTerbit());
-
         System.out.println("\nJumlah buku berdasarkan tahun");
         System.out.print("Masukkan tahun yang dicari = ");
         int tahun = in.nextInt();
-
+        
         int banyakTahun = 0;
         for (int j = 0; j < banyakBuku; j++) {
             if (bukuBaru[j].getTahunTerbit() == tahun) {
                 banyakTahun++;
             }
         }
-        System.out.println("\njumlah buku = " + banyakTahun);
+        System.out.println("\nJumlah buku = " + banyakTahun);
     }
 }

@@ -3,7 +3,6 @@ package Modul_7;
 public class mahasiswaMain {
 
     public static void main(String[] args) {
-        
         //membuat objek baru pada class Mahasiswa1, lalu mengisi data dari parameternya
         //mencetak data dari mahasiswa tersebut dengan memanggil method getter dan konversiNilai() pada objek yang dituju
         Mahasiswa1 orang1 = new Mahasiswa1("42437669", "mark", "08/09/1999", 89, 90, 91);
@@ -16,7 +15,6 @@ public class mahasiswaMain {
         System.out.println("Uas           = " + orang1.getuas());
         System.out.println("Nilai final   = " + orang1.konversiNilai());
 
-        
         //membuat objek baru pada class Mahasiswa1, lalu mengisi data dari parameternya
         //mencetak data dari mahasiswa tersebut dengan memanggil method getter dan konversiNilai() pada objek yang dituju
         Mahasiswa2 orang2 = new Mahasiswa2("455212331", "jaemin", "29/07/2000", 99, 98, 87);

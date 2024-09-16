@@ -1,11 +1,11 @@
 package Modul_7;
 
 public class Karyawan {
-
     int npp, jumlahAnak;//mendeklarasikan variabel npp dan jumlahAnak dengan tipe data integer
     String nama;//mendeklarasikan variabel nama dengan tipe data String
     static double subsidiPerAnak = 100000;//mendeklarasikan variabel subsidiPerAnak dengan tipe data static double, kemudian menginisialisasikannya dengan nilai 100000
 
+    //menyimpan data dari nama, npp, dan jumlah anak
     public Karyawan(String nama, int npp, int jumlahAnak) {
         this.nama = nama;
         this.npp = npp;
@@ -31,4 +31,5 @@ public class Karyawan {
     double tunjanganAnak() {//method ini digunakan untuk mengembalikan hasil perhtitungan dari tunjanganAnak
         return jumlahAnak * subsidiPerAnak;
     }
+
 }

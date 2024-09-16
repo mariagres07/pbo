@@ -4,6 +4,7 @@ import Modul_4.Mahasiswa;
 
 public class Mahasiswa2 extends Mahasiswa{
 
+    //Keyword super bertujuan untuk menggunakan method yang terdapat pada Super Class atau class Mahasiswa
     public Mahasiswa2(String nim, String nama, String tanggalLahir, double uts1, double uts2, double uas) {
         super(nim, nama, tanggalLahir, uts1, uts2, uas);
     }
